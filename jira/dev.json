@@ -1,0 +1,756 @@
+
+
+{
+    "id": "10019",
+    "name": "Bug",
+    "requires_user_input": true,
+    "fields": [
+        {
+            "name": "Summary",
+            "has_default_value": false,
+            "schema": {
+                "type": "string",
+                "system": "summary"
+            },
+            "key": "summary",
+            "required": true
+        },
+        {
+            "name": "Issue Type",
+            "has_default_value": false,
+            "schema": {
+                "type": "issuetype",
+                "system": "issuetype"
+            },
+            "key": "issuetype",
+            "required": true,
+            "allowed_values": [
+                {
+                    "id": "10019",
+                    "description": "A problem which impairs or prevents the functions of the product. (Migrated on 2 Mar 2023 23:58 UTC)",
+                    "iconUrl": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303,
+                    "hierarchyLevel": 0
+                }
+            ]
+        },
+        {
+            "name": "Parent",
+            "has_default_value": false,
+            "schema": {
+                "type": "issuelink",
+                "system": "parent"
+            },
+            "key": "parent",
+            "required": false
+        },
+        {
+            "name": "Components",
+            "has_default_value": false,
+            "schema": {
+                "type": "array",
+                "items": "component",
+                "system": "components"
+            },
+            "key": "components",
+            "required": false,
+            "allowed_values": [
+                {
+                    "id": "10366",
+                    "name": "Accruals"
+                },
+                {
+                    "id": "10332",
+                    "name": "Address Normalization"
+                },
+                {
+                    "id": "10333",
+                    "name": "Address Verification (aka RBDI)"
+                },
+                {
+                    "id": "10343",
+                    "name": "Audit Freight",
+                    "description": "Use for misc parts of the audit without a specific component"
+                },
+                {
+                    "id": "10344",
+                    "name": "Audit Parcel",
+                    "description": "Use for misc parts of the audit without a specific component"
+                },
+                {
+                    "id": "10324",
+                    "name": "Automation"
+                },
+                {
+                    "id": "10363",
+                    "name": "Billing"
+                },
+                {
+                    "id": "10300",
+                    "name": "Carrier APIs"
+                },
+                {
+                    "id": "10339",
+                    "name": "Claims",
+                    "description": "Late Claims, Lost Claims, Automated filing"
+                },
+                {
+                    "id": "10301",
+                    "name": "Code Refactoring"
+                },
+                {
+                    "id": "10322",
+                    "name": "Code Review"
+                },
+                {
+                    "id": "10365",
+                    "name": "Configuration"
+                },
+                {
+                    "id": "10346",
+                    "name": "Currency Exchange",
+                    "description": "Downloading Exchange rates, Currency conversion"
+                },
+                {
+                    "id": "10296",
+                    "name": "Customer Approval",
+                    "description": "Requests for Customer Approval logic (including Post Audit rules)"
+                },
+                {
+                    "id": "10351",
+                    "name": "Dashboard Reporting"
+                },
+                {
+                    "id": "10325",
+                    "name": "Dashboards"
+                },
+                {
+                    "id": "10302",
+                    "name": "Data Download"
+                },
+                {
+                    "id": "10361",
+                    "name": "Data Exchange"
+                },
+                {
+                    "id": "10330",
+                    "name": "Data Insertion",
+                    "description": "PLD, Ebill To Pld"
+                },
+                {
+                    "id": "10297",
+                    "name": "Data Insertion (E-BILL)"
+                },
+                {
+                    "id": "10298",
+                    "name": "Data Insertion (PLD)"
+                },
+                {
+                    "id": "10364",
+                    "name": "Data Patching"
+                },
+                {
+                    "id": "10299",
+                    "name": "Database Maintenance"
+                },
+                {
+                    "id": "10358",
+                    "name": "DevOps"
+                },
+                {
+                    "id": "10337",
+                    "name": "Document Attaching",
+                    "description": "aka DOCATTACH"
+                },
+                {
+                    "id": "10359",
+                    "name": "Documentation"
+                },
+                {
+                    "id": "10360",
+                    "name": "Download Scripts"
+                },
+                {
+                    "id": "10294",
+                    "name": "Ebill To Pld"
+                },
+                {
+                    "id": "10331",
+                    "name": "EDI File Parsing"
+                },
+                {
+                    "id": "10289",
+                    "name": "EDI/EDIFACT Parsing"
+                },
+                {
+                    "id": "10319",
+                    "name": "Excel Writer"
+                },
+                {
+                    "id": "10347",
+                    "name": "Existing Web UI"
+                },
+                {
+                    "id": "10352",
+                    "name": "Export Writers",
+                    "description": "PDF, Excel, etc."
+                },
+                {
+                    "id": "10334",
+                    "name": "External APIs",
+                    "description": "SMC, PC Miler, Etc"
+                },
+                {
+                    "id": "10313",
+                    "name": "File Based Tracking"
+                },
+                {
+                    "id": "10328",
+                    "name": "File Routing",
+                    "description": "The internal system that moves files from entry point to destination server"
+                },
+                {
+                    "id": "10293",
+                    "name": "Freight Audit"
+                },
+                {
+                    "id": "10345",
+                    "name": "Fuel Calculation"
+                },
+                {
+                    "id": "10288",
+                    "name": "GL Coding"
+                },
+                {
+                    "id": "10357",
+                    "name": "Inbound Data Exchange"
+                },
+                {
+                    "id": "10353",
+                    "name": "Internal APIs"
+                },
+                {
+                    "id": "10317",
+                    "name": "Invoice Post Processing"
+                },
+                {
+                    "id": "10314",
+                    "name": "LTL"
+                },
+                {
+                    "id": "10335",
+                    "name": "Manifest Processing"
+                },
+                {
+                    "id": "10338",
+                    "name": "Manual GL Coding/Exception Processing"
+                },
+                {
+                    "id": "10290",
+                    "name": "Manual LTL Template Load"
+                },
+                {
+                    "id": "10350",
+                    "name": "Manual Reporting"
+                },
+                {
+                    "id": "10356",
+                    "name": "Network, Servers"
+                },
+                {
+                    "id": "10348",
+                    "name": "New Web UI"
+                },
+                {
+                    "id": "10303",
+                    "name": "Our APIs"
+                },
+                {
+                    "id": "10326",
+                    "name": "Outbound Data Exchange",
+                    "description": "Any Outbound data transmission (i.e. sftp, ftp,etc)"
+                },
+                {
+                    "id": "10362",
+                    "name": "PC Miler"
+                },
+                {
+                    "id": "10354",
+                    "name": "Performance"
+                },
+                {
+                    "id": "10304",
+                    "name": "POD (Signature Tracking)"
+                },
+                {
+                    "id": "10349",
+                    "name": "Prorating",
+                    "description": "Very rare. If you're not sure, don't use this"
+                },
+                {
+                    "id": "10305",
+                    "name": "Rate Calculation"
+                },
+                {
+                    "id": "10342",
+                    "name": "Rate Calculation (Bulk)",
+                    "description": "Any Rate Calculation of a Bulk Shipment"
+                },
+                {
+                    "id": "10341",
+                    "name": "Rate Calculation (Small Parcel)",
+                    "description": "Any Rate Calculation of a Small Parcel Shipment"
+                },
+                {
+                    "id": "10340",
+                    "name": "Rate Loading"
+                },
+                {
+                    "id": "10295",
+                    "name": "Rate Loading - Parcel"
+                },
+                {
+                    "id": "10316",
+                    "name": "RBDI"
+                },
+                {
+                    "id": "10291",
+                    "name": "Reporting Engine",
+                    "description": "gen_env and report"
+                },
+                {
+                    "id": "10306",
+                    "name": "Reports"
+                },
+                {
+                    "id": "10323",
+                    "name": "Research"
+                },
+                {
+                    "id": "10327",
+                    "name": "Scheduled Reporting"
+                },
+                {
+                    "id": "10321",
+                    "name": "Security"
+                },
+                {
+                    "id": "10336",
+                    "name": "Shipment Tracking",
+                    "description": "Tracking processes including POD Signature Tracking"
+                },
+                {
+                    "id": "10292",
+                    "name": "Small Parcel Audit"
+                },
+                {
+                    "id": "10307",
+                    "name": "System Internals"
+                },
+                {
+                    "id": "10355",
+                    "name": "System Maintenance, Backup, DB, Monitoring"
+                },
+                {
+                    "id": "10329",
+                    "name": "Template-Based Invoice Load"
+                },
+                {
+                    "id": "10308",
+                    "name": "Testing"
+                },
+                {
+                    "id": "10309",
+                    "name": "Tooling"
+                },
+                {
+                    "id": "10310",
+                    "name": "Tracking"
+                },
+                {
+                    "id": "10311",
+                    "name": "Transit Time Calculation"
+                },
+                {
+                    "id": "10318",
+                    "name": "TriumphPay"
+                },
+                {
+                    "id": "10320",
+                    "name": "UI Upgrade",
+                    "description": "Suggestions for the 2020-2021 UI Upgrade project"
+                },
+                {
+                    "id": "10315",
+                    "name": "UPS Quantum View"
+                },
+                {
+                    "id": "10312",
+                    "name": "Web Interface"
+                }
+            ]
+        },
+        {
+            "name": "Billable",
+            "has_default_value": false,
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:radiobuttons",
+                "customId": 10050
+            },
+            "key": "customfield_10050",
+            "required": false,
+            "allowed_values": [
+                {
+                    "value": "Yes",
+                    "id": "10039"
+                }
+            ]
+        },
+        {
+            "name": "System instance / Database",
+            "has_default_value": false,
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10040
+            },
+            "key": "customfield_10040",
+            "required": true,
+            "allowed_values": [
+                {
+                    "value": "01",
+                    "id": "10020"
+                },
+                {
+                    "value": "02",
+                    "id": "10021"
+                },
+                {
+                    "value": "03",
+                    "id": "10022"
+                },
+                {
+                    "value": "04",
+                    "id": "10023"
+                },
+                {
+                    "value": "05",
+                    "id": "10024"
+                },
+                {
+                    "value": "06",
+                    "id": "10025"
+                },
+                {
+                    "value": "07",
+                    "id": "10026"
+                },
+                {
+                    "value": "08",
+                    "id": "10027"
+                },
+                {
+                    "value": "09",
+                    "id": "10028"
+                },
+                {
+                    "value": "10",
+                    "id": "10029"
+                },
+                {
+                    "value": "11",
+                    "id": "10030"
+                },
+                {
+                    "value": "12",
+                    "id": "10031"
+                },
+                {
+                    "value": "14",
+                    "id": "10032"
+                },
+                {
+                    "value": "15",
+                    "id": "10033"
+                },
+                {
+                    "value": "16",
+                    "id": "10034"
+                },
+                {
+                    "value": "hawk",
+                    "id": "10035"
+                },
+                {
+                    "value": "qc",
+                    "id": "10036"
+                },
+                {
+                    "value": "demo/dst",
+                    "id": "10037"
+                },
+                {
+                    "value": "N/A",
+                    "id": "10038"
+                }
+            ]
+        },
+        {
+            "name": "Customer Code",
+            "has_default_value": false,
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+                "customId": 10041
+            },
+            "key": "customfield_10041",
+            "required": true
+        },
+        {
+            "name": "Roadmap",
+            "has_default_value": false,
+            "schema": {
+                "type": "array",
+                "items": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes",
+                "customId": 10052
+            },
+            "key": "customfield_10052",
+            "required": false,
+            "allowed_values": [
+                {
+                    "value": "Yes",
+                    "id": "10043"
+                }
+            ]
+        },
+        {
+            "name": "Description",
+            "has_default_value": false,
+            "schema": {
+                "type": "string",
+                "system": "description"
+            },
+            "key": "description",
+            "required": false
+        },
+        {
+            "name": "Sprint",
+            "has_default_value": false,
+            "schema": {
+                "type": "array",
+                "items": "json",
+                "custom": "com.pyxis.greenhopper.jira:gh-sprint",
+                "customId": 10020
+            },
+            "key": "customfield_10020",
+            "required": false
+        },
+        {
+            "name": "Project",
+            "has_default_value": false,
+            "schema": {
+                "type": "project",
+                "system": "project"
+            },
+            "key": "project",
+            "required": true,
+            "allowed_values": [
+                {
+                    "id": "10046",
+                    "key": "DEV",
+                    "name": "IA Development",
+                    "projectTypeKey": "software",
+                    "simplified": false,
+                    "avatarUrls": {
+                        "48x48": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10400",
+                        "24x24": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10400?size=small",
+                        "16x16": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10400?size=xsmall",
+                        "32x32": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10400?size=medium"
+                    },
+                    "projectCategory": {
+                        "self": "https://intelligentaudit.atlassian.net/rest/api/2/projectCategory/10000",
+                        "id": "10000",
+                        "description": "",
+                        "name": "Development"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Steps to Reproduce/Test",
+            "has_default_value": false,
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+                "customId": 10054
+            },
+            "key": "customfield_10054",
+            "required": true
+        },
+        {
+            "name": "Reporter",
+            "has_default_value": true,
+            "schema": {
+                "type": "user",
+                "system": "reporter"
+            },
+            "key": "reporter",
+            "required": true
+        },
+        {
+            "name": "Priority",
+            "has_default_value": true,
+            "schema": {
+                "type": "priority",
+                "system": "priority"
+            },
+            "key": "priority",
+            "required": false,
+            "allowed_values": [
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/major.svg",
+                    "name": "Fire",
+                    "id": "10002"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/high.svg",
+                    "name": "High",
+                    "id": "10000"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/trivial.svg",
+                    "name": "Normal",
+                    "id": "10003"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/low.svg",
+                    "name": "Low",
+                    "id": "10001"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/minor.svg",
+                    "name": "Ice",
+                    "id": "10007"
+                }
+            ]
+        },
+        {
+            "name": "Risk",
+            "has_default_value": false,
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10056
+            },
+            "key": "customfield_10056",
+            "required": false,
+            "allowed_values": [
+                {
+                    "value": "High",
+                    "id": "10040"
+                },
+                {
+                    "value": "Moderate",
+                    "id": "10041"
+                },
+                {
+                    "value": "Low",
+                    "id": "10042"
+                }
+            ]
+        },
+        {
+            "name": "Team",
+            "has_default_value": false,
+            "schema": {
+                "type": "any",
+                "custom": "com.atlassian.teams:rm-teams-custom-field-team",
+                "customId": 10001,
+                "configuration": {
+                    "com.atlassian.jira.plugin.system.customfieldtypes:atlassian-team": true
+                }
+            },
+            "key": "customfield_10001",
+            "required": false
+        },
+        {
+            "name": "Epic Link",
+            "has_default_value": false,
+            "schema": {
+                "type": "any",
+                "custom": "com.pyxis.greenhopper.jira:gh-epic-link",
+                "customId": 10014
+            },
+            "key": "customfield_10014",
+            "required": false
+        },
+        {
+            "name": "Labels",
+            "has_default_value": false,
+            "schema": {
+                "type": "array",
+                "items": "string",
+                "system": "labels"
+            },
+            "key": "labels",
+            "required": false
+        },
+        {
+            "name": "Time tracking",
+            "has_default_value": false,
+            "schema": {
+                "type": "timetracking",
+                "system": "timetracking"
+            },
+            "key": "timetracking",
+            "required": false
+        },
+        {
+            "name": "Attachment",
+            "has_default_value": false,
+            "schema": {
+                "type": "array",
+                "items": "attachment",
+                "system": "attachment"
+            },
+            "key": "attachment",
+            "required": false
+        },
+        {
+            "name": "Due date",
+            "has_default_value": false,
+            "schema": {
+                "type": "date",
+                "system": "duedate"
+            },
+            "key": "duedate",
+            "required": false
+        },
+        {
+            "name": "Linked Issues",
+            "has_default_value": false,
+            "schema": {
+                "type": "array",
+                "items": "issuelinks",
+                "system": "issuelinks"
+            },
+            "key": "issuelinks",
+            "required": false
+        },
+        {
+            "name": "Assignee",
+            "has_default_value": false,
+            "schema": {
+                "type": "user",
+                "system": "assignee"
+            },
+            "key": "assignee",
+            "required": false
+        }
+    ],
+    "description": "A problem which impairs or prevents the functions of the product. (Migrated on 2 Mar 2023 23:58 UTC)"
+}

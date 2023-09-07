@@ -1,0 +1,890 @@
+{
+    "id": "10019",
+    "name": "Bug",
+    "description": "A problem which impairs or prevents the functions of the product. (Migrated on 2 Mar 2023 23:58 UTC)",
+    "requires_user_input": false,
+    "fields": [
+        {
+            "allowed_values": [
+                {
+                    "id": "10019",
+                    "description": "A problem which impairs or prevents the functions of the product. (Migrated on 2 Mar 2023 23:58 UTC)",
+                    "iconUrl": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10303?size=medium",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303,
+                    "hierarchyLevel": 0
+                }
+            ],
+            "required": false,
+            "key": "issuetype",
+            "name": "Issue Type",
+            "schema": {
+                "type": "issuetype",
+                "system": "issuetype"
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "parent",
+            "name": "Parent",
+            "schema": {
+                "type": "issuelink",
+                "system": "parent"
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "id": "10412",
+                    "name": "Active Directory",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10413",
+                    "name": "Analytics and Reporting Service",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10414",
+                    "name": "Billing Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10415",
+                    "name": "Cloud Storage Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10416",
+                    "name": "Data Center Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10417",
+                    "name": "Email and Collaboration Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10418",
+                    "name": "Financial Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10419",
+                    "name": "HR Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10420",
+                    "name": "Intranet",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10421",
+                    "name": "Jira",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10422",
+                    "name": "Office Network",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10423",
+                    "name": "Payroll Services",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10424",
+                    "name": "Printers",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10425",
+                    "name": "Public Website",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10426",
+                    "name": "VPN Server",
+                    "description": "Created by Jira Service Management"
+                },
+                {
+                    "id": "10427",
+                    "name": "Webstore Purchasing Services",
+                    "description": "Created by Jira Service Management"
+                }
+            ],
+            "required": false,
+            "key": "components",
+            "name": "Components",
+            "schema": {
+                "type": "array",
+                "items": "component",
+                "system": "components"
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10070",
+            "name": "Implementation plan",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+                "customId": 10070
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10071",
+            "name": "Backout plan",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+                "customId": 10071
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10072",
+            "name": "Test plan",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+                "customId": 10072
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "description",
+            "name": "Description",
+            "schema": {
+                "type": "string",
+                "system": "description"
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "id": "10057",
+                    "key": "PSUPDEV",
+                    "name": "PSUP Jira test project",
+                    "projectTypeKey": "service_desk",
+                    "simplified": false,
+                    "avatarUrls": {
+                        "48x48": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10425",
+                        "24x24": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10425?size=small",
+                        "16x16": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10425?size=xsmall",
+                        "32x32": "https://intelligentaudit.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10425?size=medium"
+                    }
+                }
+            ],
+            "required": true,
+            "key": "project",
+            "name": "Project",
+            "schema": {
+                "type": "project",
+                "system": "project"
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10010",
+            "name": "Request Type",
+            "schema": {
+                "type": "sd-customerrequesttype",
+                "custom": "com.atlassian.servicedesk:vp-origin",
+                "customId": 10010
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10054",
+            "name": "Steps to Reproduce/Test",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textarea",
+                "customId": 10054
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10035",
+            "name": "Request participants",
+            "schema": {
+                "type": "array",
+                "items": "user",
+                "custom": "com.atlassian.servicedesk:sd-request-participants",
+                "customId": 10035
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10036",
+            "name": "Satisfaction",
+            "schema": {
+                "type": "sd-feedback",
+                "custom": "com.atlassian.servicedesk:sd-request-feedback",
+                "customId": 10036
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "timetracking",
+            "name": "Time tracking",
+            "schema": {
+                "type": "timetracking",
+                "system": "timetracking"
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "Standard",
+                    "id": "10004"
+                },
+                {
+                    "value": "Normal",
+                    "id": "10005"
+                },
+                {
+                    "value": "Emergency",
+                    "id": "10006"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10005",
+            "name": "Change type",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10005
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "Critical",
+                    "id": "10007"
+                },
+                {
+                    "value": "High",
+                    "id": "10008"
+                },
+                {
+                    "value": "Medium",
+                    "id": "10009"
+                },
+                {
+                    "value": "Low",
+                    "id": "10010"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10006",
+            "name": "Change risk",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10006
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "API",
+                    "id": "10223"
+                },
+                {
+                    "value": "ADD",
+                    "id": "10224"
+                },
+                {
+                    "value": "NU",
+                    "id": "10225"
+                },
+                {
+                    "value": "PAR",
+                    "id": "10226"
+                },
+                {
+                    "value": "REP",
+                    "id": "10227"
+                },
+                {
+                    "value": "SA",
+                    "id": "10228"
+                },
+                {
+                    "value": "CORE",
+                    "id": "10229"
+                },
+                {
+                    "value": "TEST",
+                    "id": "10230"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10128",
+            "name": "Dev Projects",
+            "schema": {
+                "type": "array",
+                "items": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiselect",
+                "customId": 10128
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10008",
+            "name": "Actual start",
+            "schema": {
+                "type": "datetime",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+                "customId": 10008
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "attachment",
+            "name": "Attachment",
+            "schema": {
+                "type": "array",
+                "items": "attachment",
+                "system": "attachment"
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10009",
+            "name": "Actual end",
+            "schema": {
+                "type": "datetime",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+                "customId": 10009
+            },
+            "has_default_value": false
+        },
+        {
+            "required": true,
+            "key": "summary",
+            "name": "Summary",
+            "schema": {
+                "type": "string",
+                "system": "summary"
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "Critical",
+                    "id": "10060"
+                },
+                {
+                    "value": "High",
+                    "id": "10061"
+                },
+                {
+                    "value": "Medium",
+                    "id": "10062"
+                },
+                {
+                    "value": "Low",
+                    "id": "10063"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10062",
+            "name": "Urgency",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10062
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "01",
+                    "id": "10020"
+                },
+                {
+                    "value": "02",
+                    "id": "10021"
+                },
+                {
+                    "value": "03",
+                    "id": "10022"
+                },
+                {
+                    "value": "04",
+                    "id": "10023"
+                },
+                {
+                    "value": "05",
+                    "id": "10024"
+                },
+                {
+                    "value": "06",
+                    "id": "10025"
+                },
+                {
+                    "value": "07",
+                    "id": "10026"
+                },
+                {
+                    "value": "08",
+                    "id": "10027"
+                },
+                {
+                    "value": "09",
+                    "id": "10028"
+                },
+                {
+                    "value": "10",
+                    "id": "10029"
+                },
+                {
+                    "value": "11",
+                    "id": "10030"
+                },
+                {
+                    "value": "12",
+                    "id": "10031"
+                },
+                {
+                    "value": "14",
+                    "id": "10032"
+                },
+                {
+                    "value": "15",
+                    "id": "10033"
+                },
+                {
+                    "value": "16",
+                    "id": "10034"
+                },
+                {
+                    "value": "hawk",
+                    "id": "10035"
+                },
+                {
+                    "value": "qc",
+                    "id": "10036"
+                },
+                {
+                    "value": "demo/dst",
+                    "id": "10037"
+                },
+                {
+                    "value": "N/A",
+                    "id": "10038"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10040",
+            "name": "System instance / Database",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10040
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10063",
+            "name": "Affected services",
+            "schema": {
+                "type": "array",
+                "items": "service-entity-field",
+                "custom": "com.atlassian.jira.plugins.service-entity:service-entity-field-cftype",
+                "customId": 10063
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10041",
+            "name": "Customer Code",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+                "customId": 10041
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "More info required",
+                    "id": "10064"
+                },
+                {
+                    "value": "Awaiting approval",
+                    "id": "10065"
+                },
+                {
+                    "value": "Waiting on vendor",
+                    "id": "10066"
+                },
+                {
+                    "value": "Pending on change request",
+                    "id": "10067"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10064",
+            "name": "Pending reason",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10064
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "reporter",
+            "name": "Reporter",
+            "schema": {
+                "type": "user",
+                "system": "reporter"
+            },
+            "has_default_value": true
+        },
+        {
+            "required": false,
+            "key": "customfield_10065",
+            "name": "Major incident",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.modules.servicemanagement.major-incident-entity:major-incident-entity-field-cftype",
+                "customId": 10065
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "languageCode": "en",
+                    "displayName": "English"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10044",
+            "name": "Request language",
+            "schema": {
+                "type": "sd-request-lang",
+                "custom": "com.atlassian.servicedesk.servicedesk-lingo-integration-plugin:sd-request-language",
+                "customId": 10044
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "Sev-0",
+                    "id": "10068"
+                },
+                {
+                    "value": "Sev-1",
+                    "id": "10069"
+                },
+                {
+                    "value": "Sev-2",
+                    "id": "10070"
+                },
+                {
+                    "value": "Sev-3",
+                    "id": "10071"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10066",
+            "name": "Severity",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10066
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "Email",
+                    "id": "10213"
+                },
+                {
+                    "value": "Phone",
+                    "id": "10214"
+                },
+                {
+                    "value": "Monitoring systems",
+                    "id": "10215"
+                },
+                {
+                    "value": "Vendor/technical advisory",
+                    "id": "10216"
+                },
+                {
+                    "value": "Customer",
+                    "id": "10217"
+                },
+                {
+                    "value": "Other",
+                    "id": "10218"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10121",
+            "name": "Source",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10121
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/major.svg",
+                    "name": "Fire",
+                    "id": "10002"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/high.svg",
+                    "name": "High",
+                    "id": "10000"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/trivial.svg",
+                    "name": "Normal",
+                    "id": "10003"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/low.svg",
+                    "name": "Low",
+                    "id": "10001"
+                },
+                {
+                    "iconUrl": "https://intelligentaudit.atlassian.net/images/icons/priorities/minor.svg",
+                    "name": "Ice",
+                    "id": "10007"
+                }
+            ],
+            "required": false,
+            "key": "priority",
+            "name": "Priority",
+            "schema": {
+                "type": "priority",
+                "system": "priority"
+            },
+            "has_default_value": true
+        },
+        {
+            "required": false,
+            "key": "customfield_10067",
+            "name": "Affected hardware",
+            "schema": {
+                "type": "string",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:textfield",
+                "customId": 10067
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10045",
+            "name": "Approver groups",
+            "schema": {
+                "type": "array",
+                "items": "group",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multigrouppicker",
+                "customId": 10045
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "High impact incident",
+                    "id": "10219"
+                },
+                {
+                    "value": "Recurring incident",
+                    "id": "10220"
+                },
+                {
+                    "value": "Non-routine incident",
+                    "id": "10221"
+                },
+                {
+                    "value": "Other",
+                    "id": "10222"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10122",
+            "name": "Investigation reason",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10122
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10002",
+            "name": "Organizations",
+            "schema": {
+                "type": "array",
+                "items": "sd-customerorganization",
+                "custom": "com.atlassian.servicedesk:sd-customer-organizations",
+                "customId": 10002
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10068",
+            "name": "Planned start",
+            "schema": {
+                "type": "datetime",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+                "customId": 10068
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10047",
+            "name": "Responders",
+            "schema": {
+                "type": "array",
+                "items": "string",
+                "custom": "com.atlassian.jira.modules.servicemanagement.responders-entity:responders-entity-field-cftype",
+                "customId": 10047
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10003",
+            "name": "Approvers",
+            "schema": {
+                "type": "array",
+                "items": "user",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:multiuserpicker",
+                "customId": 10003
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "customfield_10069",
+            "name": "Planned end",
+            "schema": {
+                "type": "datetime",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:datetime",
+                "customId": 10069
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "labels",
+            "name": "Labels",
+            "schema": {
+                "type": "array",
+                "items": "string",
+                "system": "labels"
+            },
+            "has_default_value": false
+        },
+        {
+            "allowed_values": [
+                {
+                    "value": "Extensive / Widespread",
+                    "id": "10000"
+                },
+                {
+                    "value": "Significant / Large",
+                    "id": "10001"
+                },
+                {
+                    "value": "Moderate / Limited",
+                    "id": "10002"
+                },
+                {
+                    "value": "Minor / Localized",
+                    "id": "10003"
+                }
+            ],
+            "required": false,
+            "key": "customfield_10004",
+            "name": "Impact",
+            "schema": {
+                "type": "option",
+                "custom": "com.atlassian.jira.plugin.system.customfieldtypes:select",
+                "customId": 10004
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "duedate",
+            "name": "Due date",
+            "schema": {
+                "type": "date",
+                "system": "duedate"
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "issuelinks",
+            "name": "Linked Issues",
+            "schema": {
+                "type": "array",
+                "items": "issuelinks",
+                "system": "issuelinks"
+            },
+            "has_default_value": false
+        },
+        {
+            "required": false,
+            "key": "assignee",
+            "name": "Assignee",
+            "schema": {
+                "type": "user",
+                "system": "assignee"
+            },
+            "has_default_value": false
+        }
+    ]
+}
